@@ -5,6 +5,7 @@ body {
   color: #e0e0e0;
   margin: 0;
   line-height: 1.6;
+  padding-bottom: 60px; /* space so footer doesn’t overlap content */
 }
 
 a {
@@ -113,3 +114,71 @@ a:hover {
 #projects .project h3 {
   margin-top: 0;
   font-size: 1.4rem;
+  color: #ffffff;
+}
+
+#projects .project p {
+  font-size: 1rem;
+  color: #b3b3b3;
+}
+
+#projects .project a {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.4rem 0.8rem;
+  background: #4dabf7;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+#projects .project a:hover {
+  background: #1e90ff;
+  color: #fff;
+}
+
+/* Responsive grid for projects */
+@media (min-width: 768px) {
+  #projects {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  #projects .project {
+    margin-bottom: 0;
+  }
+}
+
+/* === Contact Section === */
+#contact p a {
+  font-weight: bold;
+  color: #4dabf7;
+}
+
+/* === Footer (Sticky, Centered) === */
+footer {
+  background: #1e1e1e;
+  color: #999;
+  font-size: 0.9rem;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 1000;
+}
+
+/* === Utility Classes === */
+.hide {
+  display: none;
+}
