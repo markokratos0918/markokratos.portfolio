@@ -3,12 +3,12 @@
   <head>
     <!-- Page setup -->
     <meta charset="utf-8" />
-    <title>Your title here</title>
+    <title>Mark Dela Torre | Full Stack Developer</title>
     <meta
       name="description"
-      content="Hi! A brief description of your site for search engines"
+      content="Mark Dela Torre's portfolio showcasing full stack projects"
     />
-    <meta name="author" content="Information about the author here" />
+    <meta name="author" content="Mark Dela Torre" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
@@ -16,20 +16,15 @@
     <link rel="icon" type="image/png" href="favicon.png" />
 
     <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       rel="stylesheet"
-      type="text/css"
     />
     <link
-      href="http://fonts.googleapis.com/css?family=Roboto"
+      href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
-      type="text/css"
     />
-
-    <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" />
 
     <!-- jQuery -->
     <script
@@ -37,20 +32,16 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
   </head>
 
   <body>
     <header id="header">
-      <img src="logo.png" />
-      <h1>Mark Dela Torre's Portfolio with Sample Projects!</h1>
-
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+      <img src="logo.png" alt="Logo" />
+      <h1>Mark Dela Torre's Portfolio</h1>
       <ul class="main-menu">
         <li><a href="#home">home</a></li>
         <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects</a></li>
         <li><a href="#contact">contact</a></li>
       </ul>
     </header>
@@ -58,50 +49,99 @@
     <div id="container">
       <div class="inner">
         <div id="content">
+          <!-- Home -->
           <div id="home" class="content-region hide">
             <h2>Home</h2>
             <p>
-              Hello! This is Mark Dela Torre's Portfolio with Sample Projects!
-              <a href="https://github.com/markokratos0918/markokratos.portfolio"
+              Hello! Welcome to Mark Dela Torre's portfolio of sample projects.
+              <a
+                href="https://github.com/markokratos0918/markokratos.portfolio"
+                target="_blank"
                 >Fork this repository</a
               >
               to create your own site!
             </p>
           </div>
 
+          <!-- About -->
           <div id="about" class="content-region hide">
             <h2>About</h2>
             <p>
-              Mark Dela Torre is a versatile Full Stack Developer with hands-on
-              experience in building scalable, user-focused web applications.
+              Mark Dela Torre is a versatile Full Stack Developer with
+              experience building scalable, user-focused web applications.
               Skilled in front-end technologies such as HTML5, CSS3, JavaScript
               (ES6+), React, and Tailwind CSS, as well as back-end tools like
               Node.js, Express, Python, and SQL/NoSQL databases. He is adept at
               designing APIs, integrating cloud services, and deploying
-              applications with Docker and CI/CD pipelines. Mark also brings 14+
-              years of technical support and engineering expertise, giving him a
-              unique strength in troubleshooting and optimizing systems for
-              performance and reliability.
+              applications with Docker and CI/CD pipelines.
             </p>
           </div>
 
+          <!-- Projects -->
+          <div id="projects" class="content-region hide">
+            <h2>Projects</h2>
+
+            <div class="project">
+              <h3>Personal Portfolio Website</h3>
+              <p>
+                A responsive personal website built with HTML, CSS, and vanilla
+                JavaScript. Showcases my profile, projects, and contact
+                information.
+              </p>
+              <a
+                href="https://github.com/markokratos0918/portfolio"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+
+            <div class="project">
+              <h3>Task Manager API</h3>
+              <p>
+                RESTful API for managing tasks using Node.js, Express, and
+                MongoDB. Includes authentication, CRUD operations, and unit
+                tests.
+              </p>
+              <a
+                href="https://github.com/markokratos0918/task-manager"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+
+            <div class="project">
+              <h3>E-Commerce Demo</h3>
+              <p>
+                Full-stack e-commerce application with React (frontend), Node.js
+                & Express (backend), and a PostgreSQL database. Supports
+                payments and user accounts.
+              </p>
+              <a
+                href="https://github.com/markokratos0918/ecommerce-demo"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </div>
+
+          <!-- Contact -->
           <div id="contact" class="content-region hide">
             <h2>Contact</h2>
             <p>
-              Let's connect via Linkedin!
-              <a href="https://www.linkedin.com/in/mark-dela-torre-3a3198249/"
+              Let’s connect on LinkedIn:
+              <a
+                href="https://www.linkedin.com/in/mark-dela-torre-3a3198249/"
+                target="_blank"
                 >https://www.linkedin.com/in/deltor/</a
               >
             </p>
           </div>
         </div>
       </div>
-      x`
     </div>
 
-    <footer>Copyright DelTor Dev2025</footer>
+    <footer>© 2025 Mark Dela Torre</footer>
 
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
